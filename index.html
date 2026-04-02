@@ -5,249 +5,212 @@
     <meta charset="UTF-8">
     <title>TecNM Tláhuac</title>
 
-    <!-- Estilo gob.mx -->
+    <!-- GOB -->
     <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
-    <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/images/favicon.ico" rel="shortcut icon">
 
-    <link rel="stylesheet" href="CSS/styles_index.css">
-
+    <!-- TU CSS -->
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
 
     <!-- 🔷 LOGOS -->
     <div class="logos">
-        <img src="Imagenes/Logo Edu.png" alt="Educación">
-        <img src="Imagenes/Logo 2.png" alt="TecNM">
-        <img src="Imagenes/Logo 1.png" alt="Tláhuac">
+        <img src="Imagenes/Logo Edu.png">
+        <img src="Imagenes/Logo 2.png">
+        <img src="Imagenes/Logo 1.png">
     </div>
 
     <!-- 🔥 HERO -->
     <section class="hero">
         <h1>Instituto Tecnológico de Tláhuac</h1>
-        <p>Forma tu futuro con nosotros.</p>
+        <p>Forma tu futuro con nosotros 🚀</p>
         <a href="#carreras" class="btn btn-light">Ver carreras</a>
     </section>
 
     <!-- 🎓 CARRERAS -->
     <div class="container mt-5" id="carreras">
+
         <h2 class="text-center mb-4">Carreras</h2>
+
+        <!-- FILTROS -->
+        <div class="text-center mb-4">
+            <button class="btn btn-outline-primary filtro" data-filtro="todas">Todas</button>
+            <button class="btn btn-outline-primary filtro" data-filtro="ing">Ingenierías</button>
+            <button class="btn btn-outline-primary filtro" data-filtro="lic">Licenciaturas</button>
+        </div>
 
         <div class="row">
 
-
-            <div class="col-md-4">
-                <div class="flip-card">
+            <!-- CARD ISC-->
+            <div class="col-md-3 carrera" data-categoria="ing">
+                <div class="flip-card animar">
                     <div class="flip-card-inner">
-
                         <div class="flip-card-front">
-                            <h5>Ing. en Sistemas Computacionales</h5>
+                            Ing. en Sistemas Computacionales.
                         </div>
-
                         <div class="flip-card-back">
-                            <p>
-                                <b>Misión y perfil del egresado</b>
-                                <br>
-                                <b>Formar profesionistas líderes, éticos e innovadores</b> de desarrollar software,
-                                liderar equipos multidisciplinarios e implementar soluciones tecnológicas que generen
-                                valor social, ambiental y competitivo en un entorno global y sustentable.<br>
-                            </p>
-                            <a href="Paginas/ISC.html" class="btn btn-light">Ver más</a>
+                            <p>Software, IA y desarrollo tecnológico.</p>
+                            <button class="btn btn-light ver-mas" data-titulo="Ing. en Sistemas"
+                                data-texto="Desarrollo de software, redes e inteligencia artificial.">
+                                Ver más
+                            </button>
                         </div>
-
                     </div>
                 </div>
             </div>
 
 
-            <div class="col-md-4">
-                <div class="flip-card">
+            <!-- CARD ISA-->
+            <div class="col-md-3 carrera" data-categoria="ing">
+                <div class="flip-card animar">
                     <div class="flip-card-inner">
-
                         <div class="flip-card-front">
-                            <h5>Ing. en Sistemas Automotrices</h5>
+                            Ing. en Sistemas Automotrices.
                         </div>
-
                         <div class="flip-card-back">
-                            <p>
-                                <b>Misión y perfil del egresado</b>
-                                <br>
-                                Formar ingenieros que se desempeñen en el diseño, planeación, desarrollo y
-                                automatización de sistemas automotrices, dentro del marco legal y sustentable,
-                                mediante competencias científicas, tecnológicas y administrativas, con el fin de
-                                atender las necesidades del sector automotriz, con una actitud ética, de liderazgo y
-                                responsabilidad social.
-                                <br>
-                            </p>
-                            <a href="Paginas/ISA.html" class="btn btn-light">Ver más</a>
+                            <p>Software, IA y desarrollo tecnológico.</p>
+                            <button class="btn btn-light ver-mas" data-titulo="Ing. en Sistemas"
+                                data-texto="Desarrollo de software, redes e inteligencia artificial.">
+                                Ver más
+                            </button>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-
-            <div class="col-md-4">
-                <div class="flip-card">
+            <!-- CARD Ing. Ferroviaria-->
+            <div class="col-md-3 carrera" data-categoria="ing">
+                <div class="flip-card animar">
                     <div class="flip-card-inner">
-
                         <div class="flip-card-front">
-                            <h5>Ing. Ferroviaria</h5>
+                            Ing. Ferroviaria.
                         </div>
-
                         <div class="flip-card-back">
-                            <p>
-                                <b>Misión y perfil del egresado</b>
-                                <br>
-                                Formar profesionales con sentido humano y visión analítica e innovadora; con
-                                capacidad y habilidad de diseñar, construir y mantener sistemas ferroviarios, en un
-                                marco de desarrollo sostenible, con ética y compromiso social.<br>
-                            </p>
-                            <a href="Paginas/ISC.html" class="btn btn-light">Ver más</a>
+                            <p>Software, IA y desarrollo tecnológico.</p>
+                            <button class="btn btn-light ver-mas" data-titulo="Ing. en Sistemas"
+                                data-texto="Desarrollo de software, redes e inteligencia artificial.">
+                                Ver más
+                            </button>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-
-            <div class="col-md-4">
-                <div class="flip-card">
+            <!-- CARD Ing. en Mecatronica-->
+            <div class="col-md-3 carrera" data-categoria="ing">
+                <div class="flip-card animar">
                     <div class="flip-card-inner">
-
                         <div class="flip-card-front">
-                            <h5>Ing. Mecatrónica</h5>
+                            Ing. Mecatronica.
                         </div>
-
                         <div class="flip-card-back">
-                            <p>
-                                <b>Misión y perfil del egresado</b>
-                                <br>
-                                **Formar ingenieros mecatrónicos éticos e innovadores**, capaces de diseñar, construir,
-                                automatizar y liderar proyectos que integren tecnologías mecánicas, eléctricas,
-                                electrónicas y computacionales, con responsabilidad social y enfoque sustentable.
-                                <br>
-                            </p>
-                            <a href="Paginas/ISA.html" class="btn btn-light">Ver más</a>
+                            <p>Software, IA y desarrollo tecnológico.</p>
+                            <button class="btn btn-light ver-mas" data-titulo="Ing. en Sistemas"
+                                data-texto="Desarrollo de software, redes e inteligencia artificial.">
+                                Ver más
+                            </button>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="flip-card">
+            <!-- CARD Ing. Electronica-->
+            <div class="col-md-3 carrera" data-categoria="ing">
+                <div class="flip-card animar">
                     <div class="flip-card-inner">
-
                         <div class="flip-card-front">
-                            <h5>Arquitectura</h5>
+                            Ing. Electronica.
                         </div>
-
                         <div class="flip-card-back">
-                            <p>
-                                <b>Misión y perfil del egresado</b>
-                                <br>
-                                <b>Formar arquitectos líderes, éticos y sustentables, capaces de diseñar, construir
-                                    y gestionar proyectos urbano-arquitectónicos con calidad, innovación y
-                                    responsabilidad social.<br>
-                            </p>
-                            <a href="Paginas/ISC.html" class="btn btn-light">Ver más</a>
+                            <p>Software, IA y desarrollo tecnológico.</p>
+                            <button class="btn btn-light ver-mas" data-titulo="Ing. en Sistemas"
+                                data-texto="Desarrollo de software, redes e inteligencia artificial.">
+                                Ver más
+                            </button>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-
-            <div class="col-md-4">
-                <div class="flip-card">
+            <!-- CARD Arquitectura-->
+            <div class="col-md-3 carrera" data-categoria="ing">
+                <div class="flip-card animar">
                     <div class="flip-card-inner">
-
                         <div class="flip-card-front">
-                            <h5>Licenciatura en Administración</h5>
+                            Arquitectura.
                         </div>
-
                         <div class="flip-card-back">
-                            <p>
-                                <b>Misión y perfil del egresado</b>
-                                <br>
-                                Formar administradores estratégicos, éticos e innovadores, capaces de dirigir
-                                organizaciones, optimizar recursos, desarrollar equipos y generar valor económico y
-                                social en un entorno global y sustentable.
-                                <br>
-                            </p>
-                            <a href="Paginas/ISA.html" class="btn btn-light">Ver más</a>
+                            <p>Software, IA y desarrollo tecnológico.</p>
+                            <button class="btn btn-light ver-mas" data-titulo="Ing. en Sistemas"
+                                data-texto="Desarrollo de software, redes e inteligencia artificial.">
+                                Ver más
+                            </button>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-
-            <div class="col-md-4">
-                <div class="flip-card">
+            <!-- CARD Lic. Admin-->
+            <div class="col-md-3 carrera" data-categoria="lic">
+                <div class="flip-card animar">
                     <div class="flip-card-inner">
-
                         <div class="flip-card-front">
-                            <h5>Contador Público</h5>
+                            Linc. en Administración.
                         </div>
-
                         <div class="flip-card-back">
-                            <p>
-                                <b>Misión y perfil del egresado</b>
-                                <br>
-                                <b>Formar profesionistas líderes, éticos e innovadores</b> de desarrollar software,
-                                liderar equipos multidisciplinarios e implementar soluciones tecnológicas que generen
-                                valor social, ambiental y competitivo en un entorno global y sustentable.<br>
-                            </p>
-                            <a href="Paginas/ISC.html" class="btn btn-light">Ver más</a>
+                            <p>Software, IA y desarrollo tecnológico.</p>
+                            <button class="btn btn-light ver-mas" data-titulo="Ing. en Sistemas"
+                                data-texto="Desarrollo de software, redes e inteligencia artificial.">
+                                Ver más
+                            </button>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-
-            <div class="col-md-4">
-                <div class="flip-card">
+            <!-- CARD Contador Publico-->
+            <div class="col-md-3 carrera" data-categoria="ing">
+                <div class="flip-card animar">
                     <div class="flip-card-inner">
-
                         <div class="flip-card-front">
-                            <h5>Ing. en Electrónica</h5>
+                            Contador Público.
                         </div>
-
                         <div class="flip-card-back">
-                            <p>
-                                <b>Misión y perfil del egresado</b>
-                                <br>
-                                Formar ingenieros que se desempeñen en el diseño, planeación, desarrollo y
-                                automatización de sistemas automotrices, dentro del marco legal y sustentable,
-                                mediante competencias científicas, tecnológicas y administrativas, con el fin de
-                                atender las necesidades del sector automotriz, con una actitud ética, de liderazgo y
-                                responsabilidad social.
-                                <br>
-                            </p>
-                            <a href="Paginas/ISA.html" class="btn btn-light">Ver más</a>
+                            <p>Software, IA y desarrollo tecnológico.</p>
+                            <button class="btn btn-light ver-mas" data-titulo="Ing. en Sistemas"
+                                data-texto="Desarrollo de software, redes e inteligencia artificial.">
+                                Ver más
+                            </button>
                         </div>
-
                     </div>
                 </div>
             </div>
-
-
+            <!-- SOLO CAMBIA TEXTO Y CATEGORIA -->
 
         </div>
     </div>
 
-    <!-- 📞 CONTACTO -->
-    <div class="container mt-5 text-center">
-        <h3>Contacto</h3>
-        <p>Instituto Tecnológico de Tláhuac</p>
-        <p>Email: contacto@tlahuac.tecnm.mx</p>
+    <!-- 💎 MODAL -->
+    <div class="modal fade" id="modalCarrera">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="modalTitulo"></h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modalTexto"></p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Script gob -->
+    <!-- GOB JS -->
     <script src="https://framework-gb.cdn.gob.mx/gm/v3/assets/js/gobmx.js"></script>
+
+    <!-- TU JS -->
+    <script src="JS/js_indes.js"></script>
 
 </body>
 

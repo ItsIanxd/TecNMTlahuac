@@ -1,56 +1,22 @@
-/* 🔷 RESET GENERAL */
 body {
     margin: 0;
-    padding: 0;
-    background-color: #f4f6f9;
+    background: #f4f6f9;
 }
 
-/* 💀 ARREGLAR ESPACIO GOB.MX */
-header, .navbar, .gobmx-header {
-    margin-bottom: 0 !important;
-}
-
-/* 🔥 LOGOS (VERSIÓN PRO) */
+/* LOGOS */
 .logos {
-    background: #ffffff;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 15px 0;
-    width: 100%;
-    overflow: hidden;
-    flex-wrap: nowrap;
+    gap: 40px;
+    padding: 15px;
+    background: white;
 }
 
-/* 🔥 IMÁGENES CONTROLADAS */
 .logos img {
     max-height: 60px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-
-    /* evitar conflictos con gob */
-    position: static !important;
-    float: none !important;
-
-    /* efecto pro */
-    transition: 0.3s;
 }
 
-.logos img:hover {
-    transform: scale(1.1);
-}
-
-/* 📱 RESPONSIVE LOGOS */
-@media (max-width: 768px) {
-    .logos {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-}
-
-/* 🔥 HERO */
+/* HERO */
 .hero {
     background: linear-gradient(135deg, #1b396a, #13315c);
     color: white;
@@ -58,24 +24,21 @@ header, .navbar, .gobmx-header {
     padding: 80px 20px;
 }
 
-/* 🎓 CARRERAS */
-#carreras {
-    padding: 40px 0;
+/* GRID */
+.col-md-3 {
+    margin-bottom: 25px;
 }
 
-/* 💥 TARJETAS FLIP */
+/* TARJETAS */
 .flip-card {
-    background-color: transparent;
-    width: 100%;
-    height: 260px;
+    height: 240px;
     perspective: 1000px;
 }
 
 .flip-card-inner {
     position: relative;
-    width: 100%;
     height: 100%;
-    transition: transform 0.6s;
+    transition: 0.6s;
     transform-style: preserve-3d;
 }
 
@@ -83,28 +46,39 @@ header, .navbar, .gobmx-header {
     transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 15px;
     backface-visibility: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-/* Frente */
-.flip-card-front {
-    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.flip-card-front {
+    background: white;
     font-weight: bold;
 }
 
-/* Atrás */
 .flip-card-back {
     background: #1b396a;
     color: white;
     transform: rotateY(180deg);
-    padding: 20px;
+    flex-direction: column;
+    padding: 15px;
+}
+
+/* ANIMACIÓN */
+.animar {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
