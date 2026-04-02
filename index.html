@@ -1,28 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Tec NM Tlahuac</title>
+    <title>TecNM Tláhuac</title>
 
-    <!-- Estilos de gob.mx -->
+    <!-- Estilo gob.mx -->
     <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
-
-    <!-- Favicon -->
     <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/images/favicon.ico" rel="shortcut icon">
+
+    <style>
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 20px;
+        }
+
+        .logos img {
+            height: 70px;
+        }
+
+        .hero {
+            background: #1b396a;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+    </style>
 </head>
 
 <body>
 
-    <section class="bg-primary text-white text-center p-5">
-        <h1>Instituto Tecnológico de Tláhuac</h1>
-        <p>Forma tu futuro con nosotros 🚀</p>
-        <a class="btn btn-light">Ver carreras</a>
-    </section>
+<!-- 🔷 LOGOS -->
+<div class="logos">
+    <img src="Imagenes/Logo Edu.png" alt="Educación">
+    <img src="Imagenes/Logo 2.png" alt="TecNM">
+    <img src="Imagenes/Logo 1.png" alt="Tláhuac">
+</div>
 
-    <!-- Script de gob.mx -->
-    <script src="https://framework-gb.cdn.gob.mx/gm/v3/assets/js/gobmx.js"></script>
+<!-- 🔥 HERO -->
+<section class="hero">
+    <h1>Instituto Tecnológico de Tláhuac</h1>
+    <p>Forma tu futuro con nosotros 🚀</p>
+    <a href="#carreras" class="btn btn-light">Ver carreras</a>
+</section>
+
+<!-- 🎓 CARRERAS -->
+<div class="container mt-5" id="carreras">
+    <h2 class="text-center mb-4">Carreras</h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5>Ingeniería en Sistemas</h5>
+                    <p>Desarrollo de software y tecnología</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5>Ingeniería Industrial</h5>
+                    <p>Optimización de procesos</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5>Ingeniería en Gestión</h5>
+                    <p>Administración y negocios</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 📞 CONTACTO -->
+<div class="container mt-5 text-center">
+    <h3>Contacto</h3>
+    <p>Instituto Tecnológico de Tláhuac</p>
+    <p>Email: contacto@tlahuac.tecnm.mx</p>
+</div>
+
+<!-- Script gob -->
+<script src="https://framework-gb.cdn.gob.mx/gm/v3/assets/js/gobmx.js"></script>
 
 </body>
-
 </html>
